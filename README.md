@@ -58,3 +58,155 @@ It pauses after each screenful of information and waits for a keypress to contin
 
 ![lab1-11,12,13](https://github.com/EngAlaaKamal/linux/assets/147073553/9c5014c8-9993-4f62-ade4-15ac7846141a)
 
+
+
+
+
+#### ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------####
+
+
+## LAB2 ##
+
+## 1. Create a user account with the following attribute
+ username: islam
+ Fullname/comment: Islam Askar
+ Password: islam
+![lab2-1](https://github.com/EngAlaaKamal/linux/assets/147073553/867a0c36-eec3-48da-bae3-035f07ecccc2)
+
+
+## 2. Create a user account with the following attribute
+ Username: baduser
+ Full name/comment: Bad User
+ Password: baduser
+
+![lab2-2](https://github.com/EngAlaaKamal/linux/assets/147073553/a47ac289-f6da-4ed6-b98e-51f8ce32ef6f)
+
+## 3.4.5 Create a supplementary (Secondary) group called pgroup with group ID of 3000.&& Create a supplementary group called badgroup && Add islam user to the pgroup group as a supplementary group
+![lab2-3,4,5](https://github.com/EngAlaaKamal/linux/assets/147073553/68da9a89-f523-4860-b53d-cddc6f04b002)
+
+
+## 6. Modify the password of islam's account to password
+![lab2-6](https://github.com/EngAlaaKamal/linux/assets/147073553/e8f4b14a-d09a-4a76-9cc8-9d6f334f3031)
+
+
+## 7. Modify islam's account so the password expires after 30 days
+![lab2-7](https://github.com/EngAlaaKamal/linux/assets/147073553/a94fd571-1ad6-4511-9577-c56a8ca64770)
+
+
+## 8. Lock bad user account so he can't log in
+
+![lab2-8](https://github.com/EngAlaaKamal/linux/assets/147073553/87018939-6ae1-40f6-8d25-c9212c36d55e)
+
+## 9. Delete bad user account
+![lab2-9](https://github.com/EngAlaaKamal/linux/assets/147073553/4e1cb69a-7ee6-482d-846e-25616471d424)
+
+
+## 10. Delete the supplementary group called badgroup.
+
+![lab2-10](https://github.com/EngAlaaKamal/linux/assets/147073553/69d5ac17-234b-4ab0-862b-fcb309dd1238)
+
+## 13. Create a folder called myteam in your home directory and change its permissions to read only for the owner.
+
+![lab2-13](https://github.com/EngAlaaKamal/linux/assets/147073553/19368eab-d6eb-4db4-bd1f-19fbef1fdea7)
+
+## 14. Log out and log in by another user
+![lab2-14](https://github.com/EngAlaaKamal/linux/assets/147073553/473d5f70-f55a-44b3-b706-ab3bae9ed055)
+
+
+## 15. Try to access (by cd command) the folder (myteam)
+
+![lab2-15](https://github.com/EngAlaaKamal/linux/assets/147073553/577e03e6-25f1-45fd-9a6c-01445efa3556)
+
+## 16. Using the command Line
+ Change the permissions of oldpasswd file to give owner read and write
+permissions and for group write and execute and execute only for the others
+(using chmod in 2 different ways)
+![lab2-16-a](https://github.com/EngAlaaKamal/linux/assets/147073553/3ed995bd-e7b4-4edb-84f5-4d799813d919)
+
+
+![lab2-16-aa](https://github.com/EngAlaaKamal/linux/assets/147073553/59413d4e-41a9-4d76-af93-054ef2e6f6f7)
+
+
+ Change your default permissions to be as above.
+![lab2-16-b](https://github.com/EngAlaaKamal/linux/assets/147073553/9358275c-5a2e-4e42-b155-0e4df36590d0)
+
+
+ What is the maximum permission a file can have, by default when it is just
+created? And what is that for directory.
+
+{
+File Permissions (666):
+
+Owner (user): Read (r), Write (w)
+Group: Read (r), Write (w)
+Others: Read (r), Write (w)
+Directory Permissions (777):
+
+Owner (user): Read (r), Write (w), Execute (x)
+Group: Read (r), Write (w), Execute (x)
+Others: Read (r), Write (w), Execute (x)
+
+}
+
+ Change your default permissions to be no permission to everyone then create a
+directory and a file to verify.
+ 
+ {
+ 
+
+
+## 17. What are the minimum permission needed for:
+ Copy a directory (permission for source directory and permissions for target
+parent directory)
+
+Source file(Minimum Permissions): r
+distination directory (Minimum Permissions):w
+---------------------------------------------------------------
+
+ Copy a file (permission for source file and and permission for target parent
+directory)
+
+Source Directory (Minimum Permissions): rx
+distination directory (Minimum Permissions):w
+---------------------------------------------------------------------
+
+ Delete a file
+
+
+To delete a file, the minimum permission required is the write permission (w) on the directory containing the file. This allows the user to modify the directory by removing or adding files.
+-----------------------------------------------------------
+ Change to a directory 
+
+To make the minimum change to a directory, need the execute permission (x) on that directory.
+-------------------------------------------------------------
+ List a directory content (ls command)
+
+minimum permision is r
+--------------------------------------------------
+ View a file content (more/cat command)
+
+minimum permision is r
+--------------------------------------------------
+
+ Modify a file content
+
+minimum permision is w
+----------------------------------------------------------
+
+## 18. Create a file with permission 444. Try to edit in it and to remove it? Note what happened.
+
+## 19. What is the difference between the “x” permission for a file and for a directory?
+
+
+The meaning of the "x" (execute) permission differs between a file and a directory in Linux.
+
+For a File:
+Execute (x) Permission on a File:
+For a file, the "x" permission means the ability to execute the file as a program. It allows the user to run the file if it contains executable code.
+For a script or program file, the execute permission is necessary for it to be executed.
+For a Directory:
+Execute (x) Permission on a Directory:
+For a directory, the "x" permission means the ability to access (enter) the directory and execute certain operations within the directory.
+Without the execute permission on a directory, you cannot access its contents or navigate into it.
+
+### ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------###
