@@ -148,7 +148,15 @@ Others: Read (r), Write (w), Execute (x)
 
  Change your default permissions to be no permission to everyone then create a
 directory and a file to verify.
- 
+## Set the umask to 077 (no permission for everyone)
+umask 077
+## to verify ##
+1- Create a directory
+mkdir directory
+ls -l mydirectory
+2- Create a file
+touch file.txt
+ls -l myfile.txt
  {
  
 
@@ -192,6 +200,11 @@ minimum permision is w
 ----------------------------------------------------------
 
 ## 18. Create a file with permission 444. Try to edit in it and to remove it? Note what happened.
+touch myfile.txt
+chmod 444 myfile.txt
+
+gedit myfile.txt
+
 
 ## 19. What is the difference between the “x” permission for a file and for a directory?
 
