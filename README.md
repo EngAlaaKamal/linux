@@ -14,17 +14,15 @@ The more command is used to display the contents of a file one screen at a time,
 It pauses after each screenful of information and waits for a keypress to continue to the next screen or to exit the display.
  
 ### 3. What is the difference between rm and rmdir using man?
-#### rm 
-##### 
-##### 
-##### 
-#####     
-#####     
+#### rm
+![rm](https://github.com/EngAlaaKamal/linux/assets/147073553/9ca78e23-0bea-4f63-a617-c146b93b35e4)
+
+
 #### rmdir
-##### 
-#####
-##### 
-#####     
+![rmdir](https://github.com/EngAlaaKamal/linux/assets/147073553/83f1f634-b979-4ada-bd7f-c434ee27626e)
+
+
+
 
 ### 4. Create the following hierarchy under your home directory:
  (https://github.com/EngAlaaKamal/linux/assets/147073553/e5a1442f-4b1a-47bb-8613-b78faf593f90)
@@ -213,24 +211,75 @@ Without the execute permission on a directory, you cannot access its contents or
 
 ### LAB3 ###
 
-## 1. Using vi write your CV in the file mycv. Your CV should include your name, age, school,
-college, experience,...
+## 1. Using vi write your CV in the file mycv. Your CV should include your name, age, school,college, experience,...
+
+(https://github.com/EngAlaaKamal/linux/assets/147073553/321fcca4-4902-44c3-919f-d86203ff563e)
+
+
 ## 2. Open mycv file using vi command then: Without using arrows state how to:
-a. Move the cursor down one line at time.
-b. Move the cursor up one line at time.
-c. Search for word age
-d. Step to line 5 (assuming that you are in line 1 and file is more than 5 lines).
-e. Delete the line you are on and line 5.
-f. How to step to the end of line and change to writing mode in one-step.
+a. Move the cursor down one line at time. ## j
+b. Move the cursor up one line at time.## k
+c. Search for word age ## /age
+(https://github.com/EngAlaaKamal/linux/assets/147073553/4da81a97-b44f-41f0-a459-df5f939f1899)
+
+
+d. Step to line 5 (assuming that you are in line 1 and file is more than 5 lines).(:5)
+(https://github.com/EngAlaaKamal/linux/assets/147073553/fb9ef61d-2105-4a4c-8537-c5787a1bc1c5)
+
+
+e. Delete the line you are on and line 5.(3,5d)
+(https://github.com/EngAlaaKamal/linux/assets/147073553/71226df1-18ce-4339-824a-9c6c307c7e7d)
+
+f. How to step to the end of line and change to writing mode in one-step.(A)
+(https://github.com/EngAlaaKamal/linux/assets/147073553/c8fb8b94-6546-45e2-8598-07c641d2cc0a)
+
 ## 3. List the available shells in your system.
+![lab3-3](https://github.com/EngAlaaKamal/linux/assets/147073553/fc473fad-2d11-4ba2-a28f-9d901357d355)
+
+
 ## 4. List the environment variables in your current shell.
+![lab3-4](https://github.com/EngAlaaKamal/linux/assets/147073553/b2d56756-9904-48f8-bbf7-c06ead94cdbc)
+
+
 ## 5. List all of the environment variables for the bash shell.
+![lab3-5](https://github.com/EngAlaaKamal/linux/assets/147073553/bde9f35d-febb-4b7c-ac89-0cc0895ac599)
+
+
 ## 6. What are the commands that list the value of a specific variable?
+![lab3-6](https://github.com/EngAlaaKamal/linux/assets/147073553/96baba8e-5f46-438a-ac06-43b5057df0b7)
+
+
 ## 7. Display your current shell name.
+![lab3-7](https://github.com/EngAlaaKamal/linux/assets/147073553/a1aab642-9e7b-4e38-a293-f4cb640d28e0)
+
+
 ## 8. State the initialization files of: sh, ksh, bash.
+- sh (Bourne Shell):
+      /etc/profile
+      ~/.profile
+
+- ksh (Korn Shell):
+      /etc/profile
+      ~/.profile
+
+- bash (Bash Shell):
+  - /etc/profile, /etc/bash.bashrc
+    - Non-interactive login (when started as a login shell): ~/.bash_profile, ~/.bash_login, ~/.profile
+  - User-specific:
+    - Interactive non-login (when started in an existing session): ~/.bashrc
+
+
 ## 9. Edit in your profile to display date at login and change your prompt permanently.
+![lab3-99](https://github.com/EngAlaaKamal/linux/assets/147073553/51016734-b735-436a-bff6-8125aeaf1b69)
+
+
+
 ## 10.Execute the following command :
 echo \ then press enter
 What is the purpose of \ ?
 Notice the prompt ”>” what is that? and how can you change it from “>” to “:”.
 ## 11.Create a Bash shell alias named ls for the “ls –l” command
+(https://github.com/EngAlaaKamal/linux/assets/147073553/c94c31e0-73f6-467c-b723-2ddf0067da0d)
+
+
+
