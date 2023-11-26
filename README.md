@@ -204,13 +204,10 @@ gedit myfile.txt
 The meaning of the "x" (execute) permission differs between a file and a directory in Linux.
 
 For a File:
-Execute (x) Permission on a File:
-For a file, the "x" permission means the ability to execute the file as a program. It allows the user to run the file if it contains executable code.
-For a script or program file, the execute permission is necessary for it to be executed.
-For a Directory:
-Execute (x) Permission on a Directory:
-For a directory, the "x" permission means the ability to access (enter) the directory and execute certain operations within the directory.
-Without the execute permission on a directory, you cannot access its contents or navigate into it.
+Execute (x) Permission on a File: the "x" permission means the ability to execute the file as a program. It allows the user to run the file if it contains executable code.
+
+For a Directory: the "x" permission means the ability to access (enter) the directory and execute certain operations within the directory.
+Without the execute permission on a directory, you cannot access its contents 
 
 ### ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------###
 
