@@ -150,14 +150,6 @@ Others: Read (r), Write (w), Execute (x)
 directory and a file to verify.
 ## Set the umask to 077 (no permission for everyone)
 umask 077
-## to verify ##
-1- Create a directory
-mkdir directory
-ls -l mydirectory
-2- Create a file
-touch file.txt
-ls -l myfile.txt
- {
  
 
 
