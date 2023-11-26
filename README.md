@@ -284,4 +284,57 @@ Notice the prompt ”>” what is that? and how can you change it from “>” t
 (https://github.com/EngAlaaKamal/linux/assets/147073553/c94c31e0-73f6-467c-b723-2ddf0067da0d)
 
 
+#### ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ####
+
+## LAB5 ##
+
+## 1. Compress a file by compress, gzip, zip commands and decompress it again. State the differences between compress and gzip commands.
+![lab5-1-a](https://github.com/EngAlaaKamal/linux/assets/147073553/858d3ec8-ebc2-44a4-83e3-e933246d2d3d)
+![lab5-1-b](https://github.com/EngAlaaKamal/linux/assets/147073553/94952561-c3ac-4e26-8ff4-4922e49789e0)
+
+
+## 2. What is the command used to view the content of a compressed file.
+![lab5-2](https://github.com/EngAlaaKamal/linux/assets/147073553/4cf8d976-c54e-49b6-b331-2a6bc172cbb1)
+
+
+## 3. Backup /etc directory using tar utility.
+![lab5-3](https://github.com/EngAlaaKamal/linux/assets/147073553/2abf92db-5155-4c85-bd12-79f14a3ad285)
+
+
+## 4. Starting from your home directory, find all files that were modified in the last two day.
+![lab5-4](https://github.com/EngAlaaKamal/linux/assets/147073553/5a52d40e-fff0-422e-a1eb-060917cb5b22)
+
+
+## 5. Starting from /etc, find files owned by root user.
+![lab5-5](https://github.com/EngAlaaKamal/linux/assets/147073553/9dd66f92-e9d3-4fb1-99bc-310c08a0633c)
+
+
+## 6. Find all directories in your home directory.
+![lab5-61](https://github.com/EngAlaaKamal/linux/assets/147073553/424ae27e-daa8-4f63-92ba-391d80564c72)
+![lab5-62](https://github.com/EngAlaaKamal/linux/assets/147073553/ec47105c-94fc-4731-b66c-195932ebf214)
+
+
+## 7. Write a command to search for all files on the system that, its name is “.profile”.
+![lab5-7](https://github.com/EngAlaaKamal/linux/assets/147073553/6c8c13e8-b826-4308-8a5c-7a0e7e7bc066)
+
+
+## 8. Identify the file types of the following: /etc/passwd, /dev/pts/0, /etc, /dev/sda
+![lab5-8](https://github.com/EngAlaaKamal/linux/assets/147073553/eb354275-05dc-4804-bb08-9a40b13e3a8a)
+
+
+## 9. List the inode numbers of /, /etc, /etc/hosts.
+![lab5-9](https://github.com/EngAlaaKamal/linux/assets/147073553/e872fa8e-eb12-4875-bd35-8b416cedbd71)
+
+
+## 10. Copy /etc/passwd to your home directory, use the commands diff and cmp, and Edit in the file you copied, and then use these commands again, and check the output.
+![lab5-10](https://github.com/EngAlaaKamal/linux/assets/147073553/8382da74-6270-4953-af6a-fe8416574952)
+
+
+## 11. Create a symbolic link of /etc/passwd in /boot.
+![lab5-11](https://github.com/EngAlaaKamal/linux/assets/147073553/4d65586e-1387-4672-ac69-f1685218e91d)
+
+
+## 12. Create a hard link of /etc/passwd in /boot. Could you? Why?
+![lab5-12](https://github.com/EngAlaaKamal/linux/assets/147073553/6588e5de-43c2-45cd-a992-907ad9987e49)
+
 
