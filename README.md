@@ -339,7 +339,7 @@ Notice the prompt ”>” what is that? and how can you change it from “>” t
 
 #### ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------###
 
-## shell script ##
+## shell script lab 1 ##
 
 Using sed utility
 ## 1- Display the lines that contain the word “lp” in /etc/passwd file.
