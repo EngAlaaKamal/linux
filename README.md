@@ -333,6 +333,9 @@ Notice the prompt ”>” what is that? and how can you change it from “>” t
 ## 11. Create a symbolic link of /etc/passwd in /boot.
 ![lab5-11](https://github.com/EngAlaaKamal/linux/assets/147073553/4d65586e-1387-4672-ac69-f1685218e91d)
 
+ 
+## 12. Create a hard link of /etc/passwd in /boot. Could you? Why?
+![lab5-12](https://github.com/EngAlaaKamal/linux/assets/147073553/6588e5de-43c2-45cd-a992-907ad9987e49)
 
 #### ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------###
 
@@ -340,6 +343,7 @@ Notice the prompt ”>” what is that? and how can you change it from “>” t
 
 Using sed utility
 ## 1- Display the lines that contain the word “lp” in /etc/passwd file.
+
 ## 2- Display /etc/passwd file except the third line.
 ## 3- Display /etc/passwd file except the last line.
 ## 4- Display /etc/passwd file except the lines that contain the word “lp”.
@@ -354,8 +358,6 @@ Using awk utility
 ## 7- Print all information about greatest uid.
 ## 8- Get the sum of all accounts id’s.
 
-
-## 12. Create a hard link of /etc/passwd in /boot. Could you? Why?
-![lab5-12](https://github.com/EngAlaaKamal/linux/assets/147073553/6588e5de-43c2-45cd-a992-907ad9987e49)
+ 
 
 
