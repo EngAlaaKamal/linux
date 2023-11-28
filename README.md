@@ -343,20 +343,58 @@ Notice the prompt ”>” what is that? and how can you change it from “>” t
 
 Using sed utility
 ## 1- Display the lines that contain the word “lp” in /etc/passwd file.
+![bach1-1](https://github.com/EngAlaaKamal/linux/assets/147073553/15e47379-2336-4639-8c1f-3889178a1429)
+
 
 ## 2- Display /etc/passwd file except the third line.
+![bach1-2](https://github.com/EngAlaaKamal/linux/assets/147073553/f099909e-1620-440f-a664-82ddbbe20c9d)
+
+
 ## 3- Display /etc/passwd file except the last line.
+![bach1-3](https://github.com/EngAlaaKamal/linux/assets/147073553/28dc7733-15f4-4b39-98fa-9815e142c64a)
+
+
 ## 4- Display /etc/passwd file except the lines that contain the word “lp”.
+![bach1-4](https://github.com/EngAlaaKamal/linux/assets/147073553/0d38d3ce-d3a9-4438-bcf1-37ddcf236c87)
+
+
 ## 5- Substitute all the words that contain “lp” with “mylp” in /etc/passwd file.
+![bach1-5](https://github.com/EngAlaaKamal/linux/assets/147073553/d1cc96d6-bd6b-43b0-82b9-908b396e610a)
+
+
 Using awk utility
 ## 1- Print full name (comment) of all users in the system.
+![bach1-awk1](https://github.com/EngAlaaKamal/linux/assets/147073553/5121ee58-f451-4b4c-837e-11856f94462b)
+
+
 ## 2- Print login, full name (comment) and home directory of all users.( Print each line preceded by a line number)
+![bach1-awk2](https://github.com/EngAlaaKamal/linux/assets/147073553/1fd5408a-efa3-492b-8e9c-dbb9f6c16d4b)
+
+
 ## 3- Print login, uid and full name (comment) of those uid is greater than 500
+![bach1-awk3](https://github.com/EngAlaaKamal/linux/assets/147073553/8a8645a7-179b-48b6-b569-bdbf05e17b0a)
+
+
 ## 4- Print login, uid and full name (comment) of those uid is exactly 500
+![bach1-awk4](https://github.com/EngAlaaKamal/linux/assets/147073553/ecce904c-48bb-4bf3-bf32-80e370112c20)
+
+
 ## 5- Print line from 5 to 15 from /etc/passwd
+![bach1-awk5](https://github.com/EngAlaaKamal/linux/assets/147073553/b6cd5aad-d0fa-4c21-b335-0d9988085580)
+
+
 ## 6- Change lp to mylp
+![bach1-awk6](https://github.com/EngAlaaKamal/linux/assets/147073553/8c926fe2-ad09-4d27-ad20-f160fe12cb10)
+
+
 ## 7- Print all information about greatest uid.
+![bach1-awk7](https://github.com/EngAlaaKamal/linux/assets/147073553/c20dfdca-3d1d-4103-97d3-33f06a07d6db)
+
+
 ## 8- Get the sum of all accounts id’s.
+![bach1-awk8](https://github.com/EngAlaaKamal/linux/assets/147073553/c414f979-4e8a-44f9-8540-fa65cfc94f98)
+
+
 
  
 
