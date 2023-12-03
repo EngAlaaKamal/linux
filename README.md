@@ -397,5 +397,46 @@ Using awk utility
 
 
  
+#### ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------###
+
+## shell script lab 2 ##
+
+## 1. Create a script that asks for user name then send a greeting to him.
+![bash2-1](https://github.com/EngAlaaKamal/linux/assets/147073553/70b707a6-e2c7-45a6-8157-8b09dcd7d21e)
 
 
+## 2. Create a script called s1 that calls another script s2 where:
+     a. In s1 there is a variable called x, it's value 5
+     b. Try to print the value of x in s2 by two different ways.
+![bash2-2a](https://github.com/EngAlaaKamal/linux/assets/147073553/26ee1a69-ed71-44ea-a8ef-077de3c88200)
+![bash2-2b](https://github.com/EngAlaaKamal/linux/assets/147073553/92e571a3-994e-492a-b4af-a53d03364c07)
+![bash2-2c](https://github.com/EngAlaaKamal/linux/assets/147073553/b097c33e-33bb-4286-b7c3-da4d39644975)
+
+     
+## 3. Create a script called mycp where:
+    a. It copies a file to another
+    b. It copies multiple files to a directory.
+![bash2-3](https://github.com/EngAlaaKamal/linux/assets/147073553/169b2caa-5509-46dd-867e-880a06769a01)
+
+    
+## 4. Create a script called mycd where:
+   a. It changed directory to the user home directory, if it is called without arguments.
+   b. Otherwise, it change directory to the given directory.
+![bash2-4](https://github.com/EngAlaaKamal/linux/assets/147073553/0b02bff1-e42a-4905-a2c6-eccca8f405e9)
+
+   
+## 5. Create a script called myls where:
+   a. It lists the current directory, if it is called without arguments.
+   b. Otherwise, it lists the given directory.
+![bash2-5](https://github.com/EngAlaaKamal/linux/assets/147073553/735a4e90-c9ce-4f8a-9782-397f55e25899)
+
+   
+## 6. Enhance the above script to support the following options individually:
+  a. –l: list in long format
+  b. –a: list all entries including the hiding files.
+  c. –d: if an argument is a directory, list only its name
+  d. –i: print inode number
+  e. –R: recursively list subdirectories
+
+  ![bash2-6](https://github.com/EngAlaaKamal/linux/assets/147073553/54eb7a07-661d-453f-9802-c2bf0b7e38c7)
+![bash2-66](https://github.com/EngAlaaKamal/linux/assets/147073553/16caad7f-c57a-4273-8140-2000120c24b6)
