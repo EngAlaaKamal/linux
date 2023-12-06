@@ -440,3 +440,54 @@ Using awk utility
 
   ![bash2-6](https://github.com/EngAlaaKamal/linux/assets/147073553/54eb7a07-661d-453f-9802-c2bf0b7e38c7)
 ![bash2-66](https://github.com/EngAlaaKamal/linux/assets/147073553/16caad7f-c57a-4273-8140-2000120c24b6)
+
+
+
+
+#### ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------###
+
+## shell script lab 3 ##
+
+## 1. Write a script called mycase, using the case utility to checks the type of character
+entered by a user:
+a. Upper Case.
+b. Lower Case.
+c. Number.
+d. Nothing.
+![bash3-1](https://github.com/EngAlaaKamal/linux/assets/147073553/8f85118a-66b2-4677-a704-bfcafb0776b3)
+ 
+
+## 2. Enhanced the previous script, by checking the type of string entered by a user:
+a. Upper Cases.
+b. Lower Cases.
+c. Numbers.
+d. Mix.
+e. Nothing.
+![bash3-2](https://github.com/EngAlaaKamal/linux/assets/147073553/8751d963-ee79-4308-9e12-b1471f4fe207)
+![bash3-2a](https://github.com/EngAlaaKamal/linux/assets/147073553/5add03f9-764c-4f60-bd72-0296c9ca78a0)
+
+
+## 3. Write a script called mychmod using for utility to give execute permission to all files and
+directories in your home directory.
+![bash3-3](https://github.com/EngAlaaKamal/linux/assets/147073553/fdb4689b-2b5e-4750-b078-a7c47847a0f5)
+![bash3-3a](https://github.com/EngAlaaKamal/linux/assets/147073553/465eddc0-7714-4574-95f6-885b7b4a386f)
+
+
+## 4. Write a script called mybackup using for utility to create a backup of only files in your
+home directory.
+![bash3-4](https://github.com/EngAlaaKamal/linux/assets/147073553/60152d2d-db78-4837-907f-c553b65be32f)
+![bash3-4a](https://github.com/EngAlaaKamal/linux/assets/147073553/419df941-00cc-481c-acde-e2688954815f)
+
+
+## 5. Write a script called mymail using for utility to send a mail to all users in the system.
+![bash3-5](https://github.com/EngAlaaKamal/linux/assets/147073553/e626d670-9244-4f4a-9b0b-c9974211263e)
+![bash3-5a](https://github.com/EngAlaaKamal/linux/assets/147073553/9230bf5e-4e2c-4f68-ba53-c1a247258711)
+
+
+
+## 6. Write a script called chkmail to check for new mails every 10 seconds. Note: mails are
+saved in /var/mail/username.
+![bash3-6](https://github.com/EngAlaaKamal/linux/assets/147073553/0e230895-f369-4848-b3ec-fc47acdd6bd2)
+![bash3-6a](https://github.com/EngAlaaKamal/linux/assets/147073553/378f385d-bf83-4ea4-aa7b-14746ca577d4)
+
+
