@@ -442,6 +442,21 @@ Using awk utility
 ![bash2-66](https://github.com/EngAlaaKamal/linux/assets/147073553/16caad7f-c57a-4273-8140-2000120c24b6)
 
 
+## 7. Create a script called mytest where:
+a. It check the type of the given argument (file/directory)
+b. It check the permissions of the given argument (read/write/execute)
+![bash2-7](https://github.com/EngAlaaKamal/linux/assets/147073553/3083b502-7527-471b-8ac6-8183d52eb45d)
+![bash2-7a](https://github.com/EngAlaaKamal/linux/assets/147073553/e46afa08-35bb-4582-8845-460198656f79)
+
+
+## 8. Create a script called myinfo where:
+a. It asks the user about his/her logname.
+b. It print full info about files and directories in his/her home directory
+c. Copy his/her files and directories as much as you can in /tmp directory.
+d. Gets his current processes status.
+![bash2-8](https://github.com/EngAlaaKamal/linux/assets/147073553/eb23c598-bef4-4f18-b53b-716742dfd2c2)
+![bash2-8a](https://github.com/EngAlaaKamal/linux/assets/147073553/e6f92a62-35b7-476c-a191-8a4b6107b42d)
+
 
 
 #### ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------###
