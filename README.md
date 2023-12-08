@@ -505,4 +505,50 @@ saved in /var/mail/username.
 ![bash3-6](https://github.com/EngAlaaKamal/linux/assets/147073553/0e230895-f369-4848-b3ec-fc47acdd6bd2)
 ![bash3-6a](https://github.com/EngAlaaKamal/linux/assets/147073553/378f385d-bf83-4ea4-aa7b-14746ca577d4)
 
+## 7. What is the output of the following script
+typeset –i n1
+typeset –i n2
+n1=1
+n2=1
+while test $n1 –eq $n2
+do
+n2=$n2+1
+print $n1
+if [ $n1 –gt $n2 ]
+then
+break
+else
+continue
+fi
+n1=$n1+1
+print $n2
+done
+![bash3-7](https://github.com/EngAlaaKamal/linux/assets/147073553/9877cb72-fc00-4176-a0ba-a100ce281dab)
+
+
+## 8. Create the following menu:
+a. Press 1 to ls
+b. Press 2 to ls –a
+c. Press 3 to exit
+Using select utility then while utility.
+![bash3-8](https://github.com/EngAlaaKamal/linux/assets/147073553/81dac54b-4d15-44f2-a344-06de5fc286d8)
+![bash3-8a](https://github.com/EngAlaaKamal/linux/assets/147073553/d4cb3084-164f-493f-803c-b0220bf10802)
+
+
+## 9. Write a script called myarr that ask a user how many elements he wants to enter in an
+array, fill the array and then print it.
+![bash3-9](https://github.com/EngAlaaKamal/linux/assets/147073553/21527db1-24ed-4e06-a570-a3e6b3d23e3b)
+![bash3-9a](https://github.com/EngAlaaKamal/linux/assets/147073553/c6aca070-3e49-4756-b318-eb7f1e5568cc)
+
+
+## 10.Write a script called myavg that calculate average of all numbers entered by a user.
+Note: use arrays
+![bash3-10](https://github.com/EngAlaaKamal/linux/assets/147073553/852fe39b-3e2d-41a5-9a78-2c5867760b6d)
+![bash3-10a](https://github.com/EngAlaaKamal/linux/assets/147073553/5f97c227-faa8-4f3b-a280-6aef6399d5e9)
+
+
+## 11.Write a function called mysq that calculate square if its argument.
+![bash3-11](https://github.com/EngAlaaKamal/linux/assets/147073553/c05236a2-0058-47bc-9362-a9b44242d82b)
+![bash3-11a](https://github.com/EngAlaaKamal/linux/assets/147073553/d1894960-300a-45ac-82d1-deb232425fa2)
+
 
