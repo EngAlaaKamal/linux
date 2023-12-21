@@ -552,3 +552,45 @@ Note: use arrays
 ![bash3-11a](https://github.com/EngAlaaKamal/linux/assets/147073553/d1894960-300a-45ac-82d1-deb232425fa2)
 
 
+
+#### ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------###
+
+## admin2 lab 1 ##
+
+ 
+# 17. Attempt to run the command gnuplot. You should find that it is not installed
+  >> yum list installed | grep gnuplot
+ >> sudo yum install gnuplot
+
+
+# 18. Search for plotting packages 
+ >> yum search plotting
+
+# 19. Get more information about the gnuplot package yum info gnuplot
+ >> yum info gnuplot
+# 20. Install gnuplot
+>> sudo yum install gnuplot
+
+# 21. Attempt to remove gnuplot sudo yum remove gnuplot
+>> sudo yum remove gnuplot
+# 21. Attempt to remove gunplot-common   
+>> sudo yum remove gunplot-common  
+# 22. List all installed packages 
+>> yum list installed
+# 23. View files in the initscripts package 
+>> rpm -ql initscripts
+# 24. Get general information about the bash rpm  
+>> rpm -qi bash
+# 25. Check if files from the pam package have changed since installation 
+>> rpm -V pam
+# 26. Find installed packages with "gnome" in their names 
+>> yum list installed | grep gnome
+# 27. Install any uninstalled package from RH Enterprise Linux CDs  
+>> sudo yum install package
+# 28. Search for Photoshop-like software, excluding Gimp 
+>> yum search photoshop
+29. Create the file /etc/yum.repos.d/cdrom.repo with appropriate content for installing from the Red Hat ISO.
+# 30. Try to install any package from the new repository with 
+>> sudo yum install package. ---> using the repository you set up in the previous step.
+
+30. Try to install any package from the new repository with `sudo yum install <package-name>` using the repository you set up in the previous step.
