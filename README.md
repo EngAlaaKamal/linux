@@ -557,6 +557,53 @@ Note: use arrays
 
 ## admin2 lab 1 ##
 
+# 1. Use systemctl to view the status of all the system services.
+![labadmin1-1](https://github.com/EngAlaaKamal/linux/assets/147073553/048634d5-2144-4c6d-a078-363060c14a9b)
+![labadmin1-1a](https://github.com/EngAlaaKamal/linux/assets/147073553/f9227eb6-cf07-4e7f-8945-328e0cc5a46e)
+ 
+
+# 2. Change the default run level back to multi-user.target and reboot.
+![labadmin1-2](https://github.com/EngAlaaKamal/linux/assets/147073553/f8cd9c09-7fc6-4014-8fd1-1cf81e91e2fe)
+
+
+# 3. Send mail to the root user.
+![labadmin1-3](https://github.com/EngAlaaKamal/linux/assets/147073553/b4be6e9e-62e8-4088-9592-ae0866e94669)
+
+
+# 4. Verify that you have received this mail.
+
+![labadmin4](https://github.com/EngAlaaKamal/linux/assets/147073553/a083af19-de0e-4eb2-a0d1-7aca118a927c)
+
+# 5. Use  systemctl utility to stop postfix service &6. Send mail again to the root user.& 7. Verify that you have received this mail.&8. Use systemctl utility to start postfix service
+![labadmin5-6-7-8](https://github.com/EngAlaaKamal/linux/assets/147073553/36da4b7e-eab3-4d23-b068-c83f329c22c5)
+
+# 9. Verify that you have received this mail.
+![labadmin8-9](https://github.com/EngAlaaKamal/linux/assets/147073553/6642ac48-883a-40b0-88be-dd46fdcdea55)
+
+# 10. Edit in the GRUB2 configuration file and change the timeout variable equal 20 seconds.
+![labadmin10-a](https://github.com/EngAlaaKamal/linux/assets/147073553/cb7baa2b-81d1-4ece-929b-249ca53a9347)
+![labadmin10-b](https://github.com/EngAlaaKamal/linux/assets/147073553/a428cae9-62ca-44c0-bac0-2b2c64220567)
+
+# 11.  Edit in the GRUB2 configuration file and change your default operating system
+![labadmin11-a](https://github.com/EngAlaaKamal/linux/assets/147073553/b6ab05b7-bef0-4801-9fba-e67e99a9f350)
+![labadmin11-b](https://github.com/EngAlaaKamal/linux/assets/147073553/b3af8a33-cb1d-4a07-8a4c-10baa167a40b)
+
+# 12. You want to know some information about the status of the system every ten minutes today between the hours of  8:00 AM and 5:00 PM. to help investigate some performance issues you have been having. You suspect it might be memory related and want to keep an eye on those resources.
+  
+crontab -e
+*/10 8-16 * * * /path/to/monitor_script.sh
+
+# 13. Use mail as the root user to check for e-mail from the cron jobs you have scheduled.
+sudo mail
+
+# 14. How could you send the output from these cron jobs to another e-mail address (the manager user)?
+*/10 * * * * /path/to/your/script.sh 2>&1 | mail -s "Cron Job Output" manager 
+
+# 15. Use mail as the manager user to check for e-mail from the cron jobs you have scheduled.
+mail
+
+ 
+
  
 # 17. Attempt to run the command gnuplot. You should find that it is not installed
   >> yum list installed | grep gnuplot
