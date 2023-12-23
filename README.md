@@ -573,24 +573,208 @@ Note: use arrays
 
 # 21. Attempt to remove gnuplot sudo yum remove gnuplot
 >> sudo yum remove gnuplot
-# 21. Attempt to remove gunplot-common   
+# 22. Attempt to remove gunplot-common   
 >> sudo yum remove gunplot-common  
-# 22. List all installed packages 
+# 23. List all installed packages 
 >> yum list installed
-# 23. View files in the initscripts package 
+# 24. View files in the initscripts package 
 >> rpm -ql initscripts
-# 24. Get general information about the bash rpm  
+# 25. Get general information about the bash rpm  
 >> rpm -qi bash
-# 25. Check if files from the pam package have changed since installation 
+# 26. Check if files from the pam package have changed since installation 
 >> rpm -V pam
-# 26. Find installed packages with "gnome" in their names 
+# 27. Find installed packages with "gnome" in their names 
 >> yum list installed | grep gnome
-# 27. Install any uninstalled package from RH Enterprise Linux CDs  
->> sudo yum install package
-# 28. Search for Photoshop-like software, excluding Gimp 
+# 28. Install any uninstalled package from RH Enterprise Linux CDs  
+# 29. Search for Photoshop-like software, excluding Gimp 
 >> yum search photoshop
-29. Create the file /etc/yum.repos.d/cdrom.repo with appropriate content for installing from the Red Hat ISO.
-# 30. Try to install any package from the new repository with 
->> sudo yum install package. ---> using the repository you set up in the previous step.
+# 29. Create the file /etc/yum.repos.d/cdrom.repo with appropriate content for installing from the Red Hat ISO.
+# 30. Try to install any package from the new repository 
+>> sudo yum install git 
 
-30. Try to install any package from the new repository with `sudo yum install <package-name>` using the repository you set up in the previous step.
+
+
+#### ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------###
+# admin2 lab2"
+
+ User
+# 1.	Using the useradd command, add accounts for the following users in your system: user1, user2, user3, user4, user5, user6 and user7. Remember to give each user a password.
+sudo useradd user1
+sudo passwd user1
+sudo useradd user2
+sudo passwd user2
+sudo useradd user3
+sudo passwd user3
+# 2.	Using the groupadd command, add the following groups to your system.
+Group			GID
+sales			10000
+hr			10001
+web			10002
+sudo groupadd -g 10000 sales
+sudo groupadd -g 10001 hr
+sudo groupadd -g 10002 web
+
+ 
+# 3.	Using the usermod command to add user1 and user2 to the sales secondary group, user3 and user4 to the hr secondary group. User5 and user6 to web secondary group. And add user7 to all secondary groups  
+sudo usermod -aG sales user1 user2 user7
+sudo usermod -aG hr user3 user4 user7
+sudo usermod -aG web user5 user6 user7
+
+# 4.	 Login as each user and use id command to verify that they are in the appropriate groups. How else might you verify this information?
+id user1
+groubs user1
+
+# 5.	Create a directory called /depts with a sales, hr, and web directory within the /depts directory.
+# Create the /depts directory
+sudo mkdir /depts
+sudo mkdir /depts/sales
+sudo mkdir /depts/hr
+sudo mkdir /depts/web
+ls /depts
+
+# 6.	Using the chgrp command, set the group ownership of each directory to the group with the matching name
+
+sudo chgrp sales /depts/sales
+sudo chgrp hr /depts/hr
+sudo chgrp web /depts/web
+
+# 7.	Set the permissions on the /depts directory to 755, and each subdirectory to 770
+ 
+sudo chmod 755 /depts
+sudo chmod 770 /depts/sales
+sudo chmod 770 /depts/hr
+sudo chmod 770 /depts/web
+
+# 8.	Set the set-gid bit on each departmental directory
+ 
+sudo chmod g+s /depts/sales
+sudo chmod g+s /depts/hr
+sudo chmod g+s /depts/web
+
+# 9.	Use the su command to switch to the user2 account and attempt the following commands:
+# touch /depts/sales/user2.txt
+# touch /depts/hr/ user2.txt
+# touch /depts/web/ user2.txt
+ 
+su user2
+touch /depts/sales/user2.txt
+touch /depts/hr/user2.txt
+touch /depts/web/user2.txt
+
+# 10.	Configure sudoers file to allow user3 and user4 to use /bin/mount and /bin/umount commands, while allowing user5 only to use fdisk command.
+sudo visudo
+user3 ALL=(ALL) /bin/mount, /bin/umount
+user4 ALL=(ALL) /bin/mount, /bin/umount
+user5 ALL=(ALL) /sbin/fdisk
+
+# 11.	Login by user3 and try to unmount /boot.
+sudo /bin/umount /boot
+ 
+
+
+# 12.	Login by user4 and remount /boot. Also try to view the partition table using fdisk.
+sudo /bin/mount /boot
+sudo fdisk -l
+user4 ALL=(ALL) /sbin/fdisk
+
+# 13.	Create a directory with permissions rwxrwx---, grant a second group (sales) r-x permissions
+mkdir testt
+chmod 770 testt
+sudo usermod -aG testt
+chmod g=rx testt
+
+ 
+# 14.	 create a file on that directory and grant read and write to a second group (sales)
+
+ sudo groupadd sales
+ chmod g+r-x testt
+touch testt/file.txt
+chmod g+rw testt/file.txt
+
+
+
+# 15.	set the the owning group as the owning group of any newly created file in that directory.
+chmod g+s testt
+touch testt/file.txt
+
+
+# 16.	Grand your colleagues a collective directory called /opt/research, where they can store generated research results. Only members of group profs and grads should be able to create new files in the directory, and new file should have the following properties:
+•	the directory should be owned by root
+•	new files should be group owned by group grads
+•	group profs should automatically have read/write access to new files
+•	group interns should automatically have read only access to new files
+•	other users should not be able to access the directory and its contents at all.
+
+sudo mkdir /opt/research
+sudo chown root:root /opt/research
+sudo chmod 2770 /opt/research
+sudo groupadd profs
+sudo groupadd grads
+sudo groupadd interns
+sudo chown :grads /opt/research
+sudo chmod g+rw /opt/research
+sudo chmod g+r /opt/research
+sudo chmod o-rwx /opt/research
+
+
+# 17.	Change your default SELinux mode to permissive and reboot.
+sudo vi /etc/selinux/config
+SELINUX=enforcing
+SELINUX=permissive
+sudo reboot
+
+
+# 18.	After reboot, verify the system is in permissive mode.
+sestatus
+
+# 19.	 Change the default SELinux mode to enforcing.
+sudo vi /etc/selinux/config
+SELINUX=permissive
+SELINUX= enforcing
+sudo reboot
+
+# 20.	Change the current SELinux mode to enforcing.
+sudo setenforce 1
+
+# 21.	Copy /etc/resolv.conf file to root's home directory.
+sudo cp /etc/resolv.conf /root/
+
+# 22.	 Observe the SELinux context of the intial /etc/resolv.conf
+ls -Z /etc/resolv.conf
+
+# 23.	 Move resolv.conf from root's home directory to /etc/resolv.conf
+sudo mv /root/resolv.conf /etc/
+
+# 24.	 Observe the SELinux of the newly copied /etc/resolv.conf
+ls -Z /etc/resolv.conf
+
+# 25.	 Restore the SELinux context of the newly positioned /etc/resolv.conf
+sudo restorecon /etc/resolv.conf
+
+# 26.	 Observe the SELinux context of the restored /etc/resolv.conf
+ls -Z /etc/resolv.conf
+
+# 27.	 Configure OpenSSH to allow pulic key-based login credentials
+ssh-keygen -t rsa -b 2048
+ssh-copy-id alaa@hostname
+sudo vi /etc/ssh/sshd_config
+PubkeyAuthentication yes
+AuthorizedKeysFile  .ssh/authorized_keys
+PasswordAuthentication no
+sudo systemctl restart ssh
+ssh alaa@hostname
+
+
+
+# 28.	 Create an SSH key-pair
+ssh-keygen -t rsa -b 2048
+
+ 
+# 30.	 Configure SSH to prevent root logins.
+sudo nano /etc/ssh/sshd_config
+PermitRootLogin no
+sudo systemctl restart ssh
+
+# 31.	Configure logrotate default setting to compress log files when they are rotated
+sudo nano /etc/logrotate.conf
+
